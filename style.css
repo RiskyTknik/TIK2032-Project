@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Navigasi */
+nav {
+    background-color: #3498db;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+}
+
+/* Konten Utama */
+.section {
+    display: none;
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Judul Home */
+#home h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #2c3e50;
+}
+
+/* Tombol Mode */
+.mode-toggle {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.mode-toggle:hover {
+    background-color: #2980b9;
+}
+
+/* DARK MODE TAMBAHAN */
+body.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode nav a {
+    color: white;
+}
+
+body.dark-mode nav a:hover {
+    background-color: #333;
+}
+
+body.dark-mode .section {
+    background-color: #1f1f1f;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode #home h1 {
+    color: #ecf0f1;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
