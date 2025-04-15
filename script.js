@@ -1,13 +1,13 @@
-// Fungsi untuk menampilkan bagian tertentu dan menyembunyikan lainny
+// Fungsi untuk menampilkan bagian tertentu dan menyembunyikan lainnya
 function showSection(event, sectionId) {
     if (event) event.preventDefault(); // Cegah reload halaman
 
     const sections = document.querySelectorAll('.section');
-    sections.forEach(section => section.classList.remove('active'));
+    sections.forEach(section => section.classList.remove('active')); // Sembunyikan semua bagian
 
     setTimeout(() => {
         const target = document.getElementById(sectionId);
-        if (target) target.classList.add('active');
+        if (target) target.classList.add('active'); // Tampilkan bagian yang dipilih
     }, 50);
 }
 
