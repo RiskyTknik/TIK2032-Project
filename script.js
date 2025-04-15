@@ -1,4 +1,4 @@
-// Fungsi untuk menampilkan bagian tertentu dan menyembunyikan lainnya
+// Fungsi untuk menampilkan bagian tertentu dan menyembunyikan lainny
 function showSection(event, sectionId) {
     if (event) event.preventDefault(); // Cegah reload halaman
 
